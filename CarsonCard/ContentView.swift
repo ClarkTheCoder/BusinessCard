@@ -13,11 +13,16 @@ struct ContentView: View {
             Color(red: 0.09, green: 0.63, blue: 0.52)
                 .ignoresSafeArea(.all)
             VStack {
+                Image("carson")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                 Text("Carson Cameron Clark")
-                    .font(Font.custom("Pacifico-Regular", size: 25))
+                    .font(Font.custom("Pacifico-Regular", size: 30))
                     .bold()
                     .foregroundColor(.white)
                 Text("Systems Analyst")
+                    .foregroundColor(.white)
+                    .font(.system(size: 19))
             }
             .padding()
         }
