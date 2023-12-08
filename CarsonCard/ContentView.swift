@@ -16,6 +16,11 @@ struct ContentView: View {
                 Image("carson")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 5)
+                    )
                 Text("Carson Cameron Clark")
                     .font(Font.custom("Pacifico-Regular", size: 30))
                     .bold()
