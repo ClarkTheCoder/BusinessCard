@@ -28,8 +28,18 @@ struct ContentView: View {
                 Text("Systems Analyst")
                     .foregroundColor(.white)
                     .font(.system(size: 19))
+                Divider()
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color.white)
+                    .frame(height: 40)
+                    .overlay(HStack {
+                        Image(systemName: "phone.fill")
+                            .foregroundColor(Color(red: 0.09, green: 0.63, blue: 0.52))
+                        Text("250-415-0970")
+                            .bold()
+                    })
+                    .padding(.all)
             }
-            .padding()
         }
     }
 }
